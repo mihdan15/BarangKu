@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sort_nama_barang"
+        android:title="Sort Nama Barang" />
+    <item
+        android:id="@+id/menu_sort_id_barang"
+        android:title="Sort ID Barang" />
+    <item
+        android:id="@+id/menu_sort_jumlah_barang"
+        android:title="Sort Jumlah Barang" />
+    <item
+        android:id="@+id/menu_sort_kategori"
+        android:title="Sort Kategori" />
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BarangKu</string>
+    <string-array name="categories">
+        <item>Barang Rumah</item>
+        <item>Teknologi</item>
+        <item>Pakaian</item>
+        <item>Elektronik</item>
+    </string-array>
+
+</resources>

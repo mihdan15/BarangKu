@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAddActivity"
+    android:orientation="vertical"
+    android:background="@drawable/splash">
+
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/formName"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/logo"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Tambah Data"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/barEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@id/logo"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="1dp"
+            android:text="Edit"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/barIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:padding="8dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/idLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Id Barang"
+            android:textStyle="bold"
+            android:textColor="@color/utama"/>
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cardbg"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:hint="Tanggal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Tanggal"
+            android:textStyle="bold"
+            android:textColor="@color/utama"/>
+
+        <EditText
+            android:id="@+id/etTgl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cardbg"
+            android:drawableStart="@drawable/calendar"
+            android:drawablePadding="12dp"
+            android:hint="Tanggal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Nama Barang"
+            android:textStyle="bold"
+            android:textColor="@color/utama"/>
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Nama Barang"
+            android:background="@drawable/cardbg"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/barang"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Kategori"
+            android:textStyle="bold"
+            android:textColor="@color/utama"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/cardbg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Jumlah"
+            android:textStyle="bold"
+            android:textColor="@color/utama"/>
+        <EditText
+            android:id="@+id/etJml"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Jumlah Barang"
+            android:background="@drawable/cardbg"
+            android:drawableStart="@drawable/count"
+            android:drawablePadding="12dp"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Keterangan"
+            android:textStyle="bold"
+            android:textColor="@color/utama"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/etKet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardbg"
+                android:drawableStart="@drawable/desc"
+                android:drawablePadding="12dp"
+                android:hint="Keterangan Barang" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah"
+            android:id="@+id/btnAction"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:radius="8dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
