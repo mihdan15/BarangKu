@@ -13,23 +13,5 @@ interface CrudView {
     //untuk delete
     fun onSuccessDelete(msg: String)
     fun onErrorDelete(msg : String)
-
 }
 
-//else if (itemDataItem != null) {
-//    btnAction.text = "Update"
-//    val item = itemDataItem as DataItem?
-//    etTgl. setText(item?. tglBarang. toString())
-//    etNama. setText(item?. namaBarang. toString())
-//    etJml. setText(item?. jmlBarang. toString())
-//    etKet.setText(item?.ketBarang.toString())
-//    btnAction. setOnClickListener() {
-//        presenter. updateData(
-//            item?.idBarang?:"",
-//            etTgl. text. toString() ,
-//            etNama. text. toString() ,
-//            etJml. text. toString() ,
-//            etKet. text. toString())
-//        finish()
-//    }
-//}

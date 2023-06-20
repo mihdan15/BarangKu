@@ -51,7 +51,9 @@ class UpdateAddActivity : AppCompatActivity(), CrudView {
 
             if (itemDataItem == null) {
                 btnAction.text = "Tambah"
-            btnAction. setOnClickListener() {
+                etId.visibility = View.GONE
+                idLabel.visibility = View.GONE
+                btnAction. setOnClickListener() {
                 presenter.addData(
                     etTgl.text.toString(),
                     etNama.text.toString(),
