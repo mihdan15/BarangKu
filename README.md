@@ -2,11 +2,13 @@
 Tugas 2 PPB 2
 
 Kelompok Kuning
-1.
-2.
-3.
-4.
-5.
+1. Ahmad Mihdan Advani (21.52.0005)
+2. Fakhruddin Arrozi(21.52.0023)
+3. Yusron Ainun Mubarok (21.51.0009)
+4. Marcellina Agatha (21.51.0001)
+5. Nayudhe Sania Anako (21.31.0007)
+
+### Vidio Tutorial https://drive.google.com/file/d/1rWDJNaIGGPjGL8r6gniVBLlN8HtpSz_Z/view?usp=drive_link
 
 Aplikasi untuk inventory barang sederhana CRUD API dengan Codeigniter 3
 
